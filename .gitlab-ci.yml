@@ -4,7 +4,5 @@ pages:
   — cp -r * .public
   — mv .public public
  artifacts:
-    paths:
-     — public
- only:
-  — master
+    paths: ['public']
+ only: ['master']
