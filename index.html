@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Git cheatsheet</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="box">
+        <h1>Git cheatsheet</h1>
+
+        <h2>1. Konfiguracja Gita</h2>
+		<p>Konfiguracja tożsamości</p>
+        <p class="code">$ git config (--system/--global/--local) user.name "nazwa uzytkownika"</p>
+        <p class="code">$ git config (--system/--global/--local) user.email example@example.com</p>
+		<p>Konfiguracja edytora</p>
+        <p class="code">$ git config (--system/--global/--local) core.editor (vim/nano/inny...)</p>
+        <p>Konfiguracja konfiguracja narzędzia rozwiązywania konfliktów</p>
+        <p class="code">$ git config (--system/--global/--local) merge.tool (vim/nano/code/inny...)</p>
+        
+		<h2>2. Repozytorium lokalne</h2>
+		<p>Tworzenie repozytorium</p>
+		<p class="code">$ git init</p>
+		<p>Dodanie plików do repozytorium</p>
+        <p class="code">$ git add (pliki)</p>
+        <p>Tworzenie nowego brancha i przełączenie sie na niego</p>
+		<p class="code">$ git checkout -b nazwa_brancha</p>
+		<p>Zmiana aktywnego brancha</p>
+		<p class="code">$ git checkout nazwa_brancha</p>
+        <p>Commitowanie zmian</p>
+        <p class="code">$ git commit (-m "Treść commita")</p>
+        <p>Mergowanie zmian (będąc na branchu docelowym)</p>
+        <p class="code">$ git merge nazwa_mergowanego_brancha</p>
+        
+        <h2>3. Repozytorium zdalne</h2>
+        <p>Klonowanie zdalnego repozytorium</p>
+        <p class="code">$ git clone link_do_repozytorium</p>
+		<p>Dodawanie repozytorium do listy zdalnych</p>
+        <p class="code">$ git remote add "nazwa_repozytorium" "link ssh lub http"</p>
+        <p>Listowanie zapamiętanych zdalnych repozytoriów</p>
+        <p class="code">$ git remote -v</p>
+        <p>Pobieranie zmian ze zdalnego repozytorium</p>
+        <p class="code">$ git pull "repozytorium"</p>
+        <p>Wypychanie zmian do zdalnego repozytorium</p>
+		<p class="code">$ git push -u "nazwa_repozytorium" "branch"</p>
+		<br>
+		<br>
+		<a href="https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt">Widok brancha gita w bashowym prompcie</a>
+	</div>
+</body>
+</html>

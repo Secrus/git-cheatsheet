@@ -1,0 +1,15 @@
+* {
+    font-family: Verdana;
+    background-color: #a9a9a9;
+}
+.box {
+    padding: 0 20%;
+}
+.code {
+    font-family: Courier;
+    padding: 5px 20px;
+    background-color: #000;
+    font-size: 16px;
+    color: #32de32;
+    font-weight: bold;
+}
