@@ -13,3 +13,11 @@
     color: #32de32;
     font-weight: bold;
 }
+header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    padding: 2%;
+}

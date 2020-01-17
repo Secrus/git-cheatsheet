@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
 	<title>Git cheatsheet</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	
-	<div class="box">
-		<h1>Git cheatsheet</h1>
+	<header>
+        <h1>Git cheatsheet</h1>
+    </header>
+	<main class="box">
 		<p>Ta strona jest dodatkiem do mojej prezentacji o podstawach gita, dostępnej <a href="https://docs.google.com/presentation/d/1APMv0wEm2XOngJDnZQfG-u9E2eL89W-6yGtNmrHXTxw/edit?usp=sharing">tutaj</a></p>
         <h2>1. Konfiguracja Gita</h2>
 		<p>Konfiguracja tożsamości</p>
@@ -23,30 +24,35 @@
 		<p>Tworzenie repozytorium</p>
 		<p class="code">$ git init</p>
 		<p>Dodanie plików do repozytorium</p>
-        <p class="code">$ git add (pliki)</p>
+        <p class="code">$ git add &lt;pliki (może być wyrażenie regularne)&gt;</p>
         <p>Tworzenie nowego brancha i przełączenie sie na niego</p>
-		<p class="code">$ git checkout -b nazwa_brancha</p>
+		<p class="code">$ git checkout -b &lt;nazwa brancha&gt;</p>
 		<p>Zmiana aktywnego brancha</p>
-		<p class="code">$ git checkout nazwa_brancha</p>
-        <p>Commitowanie zmian</p>
-        <p class="code">$ git commit (-m "Treść commita")</p>
+		<p class="code">$ git checkout &lt;nazwa brancha&gt;</p>
+        <p>Commitowanie zmian (uruchamia domyślny edytor do napisania treści commita)</p>
+        <p class="code">$ git commit</p>
+        <p>lub</p>
+        <p class="code">$ git commit -m "Treść commita"</p>
         <p>Mergowanie zmian (będąc na branchu docelowym)</p>
-        <p class="code">$ git merge nazwa_mergowanego_brancha</p>
+        <p class="code">$ git merge &lt;nazwa mergowanego brancha&gt;</p>
         
         <h2>3. Repozytorium zdalne</h2>
         <p>Klonowanie zdalnego repozytorium</p>
-        <p class="code">$ git clone link_do_repozytorium</p>
+        <p class="code">$ git clone &lt;link do repozytorium&gt;</p>
 		<p>Dodawanie repozytorium do listy zdalnych</p>
-        <p class="code">$ git remote add "nazwa_repozytorium" "link ssh lub http"</p>
+        <p class="code">$ git remote add &lt;lokalna nazwa repozytorium&gt; &lt;link ssh lub http&gt;</p>
         <p>Listowanie zapamiętanych zdalnych repozytoriów</p>
         <p class="code">$ git remote -v</p>
         <p>Pobieranie zmian ze zdalnego repozytorium</p>
-        <p class="code">$ git pull "repozytorium"</p>
+        <p class="code">$ git pull &lt;nazwa zdalnego repozytorium&gt;</p>
         <p>Wypychanie zmian do zdalnego repozytorium</p>
-		<p class="code">$ git push -u "nazwa_repozytorium" "branch"</p>
+		<p class="code">$ git push &lt;nazwa zdalnego repozytorium&gt; &lt;branch&gt;</p>
 		<br>
 		<br>
 		<a href="https://coderwall.com/p/fasnya/add-git-branch-name-to-bash-prompt">Widok brancha gita w bashowym prompcie</a>
-	</div>
+	</main>
+    <footer>
+        Author: Bartosz "Secrus" Sokorski
+    </footer>
 </body>
 </html>
